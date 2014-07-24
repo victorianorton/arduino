@@ -27,7 +27,10 @@ void loop()
   {
         digitalWrite(pinCam, HIGH);     //turns 'pinCam' on                                      --turns camera on                          
         digitalWrite(pinLED, HIGH);     //writes led (can be analog instead of digital)      -- turns LED on
-        analogWrite(pinSolen, HIGH);   //writes stimulus                                    -- turns stimulus off
+        
+        digitalWrite(pinSolen, HIGH);
+
+        //analogWrite(pinSolen, HIGH);   //writes stimulus                                    -- turns stimulus off
       
         delay(1000);                    //keeps on for a second               
 
