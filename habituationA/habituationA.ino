@@ -22,8 +22,10 @@ void setup()
 
 void loop()
 {   
-  for(int i = 0; i < 16; i++)
+  for(int i = 0; i < 31; i++)
   {
+    if(i < 16)
+    {
         digitalWrite(pinCam, HIGH);     //turns 'pinCam' on                                  -- turns camera on                          
         digitalWrite(pinLED, HIGH);     //writes led (can be analog instead of digital)      -- turns LED on
         digitalWrite(pinSol, HIGH);     //writes stimulus                                    -- turns stimulus on
@@ -35,7 +37,19 @@ void loop()
         analogWrite(pinSol, LOW);     //writes stimulus                                    -- turns stimulus off
         
         delay(1000);                    //turns off for a second               
-  }    
+    }
+    else
+    {
+        digitalWrite(pinLED, HIGH);     //writes led (can be analog instead of digital)      -- turns LED on
+        digitalWrite(pinSol, HIGH);     //writes stimulus                                    -- turns stimulus on
+      
+        delay(1000);                    //keeps on for a second               
 
+        digitalWrite(pinLED, LOW);      //writes led (can be analog instead of digital)      -- turns LED off      
+        analogWrite(pinSol, LOW);     //writes stimulus                                    -- turns stimulus off
+        
+        delay(1000);                    //turns off for a second         
+    }
+  }    
   delay(90000);
 }
