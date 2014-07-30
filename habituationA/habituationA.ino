@@ -34,7 +34,7 @@ void loop()
 
         digitalWrite(pinCam, LOW);      //turns 'pinCam' off                                 -- turns camera off                          
         digitalWrite(pinLED, LOW);      //writes led (can be analog instead of digital)      -- turns LED off      
-        analogWrite(pinSol, LOW);     //writes stimulus                                    -- turns stimulus off
+        analogWrite(pinSol, LOW);       //writes stimulus                                    -- turns stimulus off
         
         delay(1000);                    //turns off for a second               
     }
@@ -46,7 +46,7 @@ void loop()
         delay(1000);                    //keeps on for a second               
 
         digitalWrite(pinLED, LOW);      //writes led (can be analog instead of digital)      -- turns LED off      
-        analogWrite(pinSol, LOW);     //writes stimulus                                    -- turns stimulus off
+        analogWrite(pinSol, LOW);       //writes stimulus                                    -- turns stimulus off
         
         delay(1000);                    //turns off for a second         
     }
