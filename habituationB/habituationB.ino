@@ -32,7 +32,7 @@ void loop()
       delay(1000);                    //keeps on for a second               
 
       digitalWrite(pinLED, LOW);      //turns LED off      
-      analogWrite(pinSol, LOW);     //turns solenoid off
+      analogWrite(pinSol, LOW);       //turns solenoid off
         
       delay(1000);                    //turns off for a second               
     }
@@ -50,11 +50,10 @@ void loop()
 
       digitalWrite(pinCam, LOW);      //turns camera off                          
       digitalWrite(pinLED, LOW);      //turns LED off      
-      analogWrite(pinSol, LOW);     //turns solenoid off
+      analogWrite(pinSol, LOW);       //turns solenoid off
         
       delay(1000);                    //turns off for a second               
     }
   }    
-
   delay(90000);
 }
