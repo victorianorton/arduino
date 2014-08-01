@@ -10,7 +10,7 @@
 */
  
 const int pinCam = 7;                   //pin the camera is connected to
-const int pinSol = 53;                  //pin the solenoid which is connected to the stimulus
+const int pinSol = 53;                  //pin the solenoid is connected to
 const int pinLED = 13;                  //pin the LED light is connected to
 
 void setup()
@@ -26,27 +26,27 @@ void loop()
   {
     if(i < 16)
     {
-        digitalWrite(pinCam, HIGH);     //turns 'pinCam' on                                  -- turns camera on                          
-        digitalWrite(pinLED, HIGH);     //writes led (can be analog instead of digital)      -- turns LED on
-        digitalWrite(pinSol, HIGH);     //writes stimulus                                    -- turns stimulus on
+        digitalWrite(pinCam, HIGH);     //turns camera on                          
+        digitalWrite(pinLED, HIGH);     //turns LED on
+        digitalWrite(pinSol, HIGH);     //turns stimulus on
       
         delay(1000);                    //keeps on for a second               
 
-        digitalWrite(pinCam, LOW);      //turns 'pinCam' off                                 -- turns camera off                          
-        digitalWrite(pinLED, LOW);      //writes led (can be analog instead of digital)      -- turns LED off      
-        analogWrite(pinSol, LOW);       //writes stimulus                                    -- turns stimulus off
+        digitalWrite(pinCam, LOW);      //turns camera off                          
+        digitalWrite(pinLED, LOW);      //turns LED off      
+        analogWrite(pinSol, LOW);       //turns stimulus off
         
         delay(1000);                    //turns off for a second               
     }
     else
     {
-        digitalWrite(pinLED, HIGH);     //writes led (can be analog instead of digital)      -- turns LED on
-        digitalWrite(pinSol, HIGH);     //writes stimulus                                    -- turns stimulus on
+        digitalWrite(pinLED, HIGH);     //turns LED on
+        digitalWrite(pinSol, HIGH);     //turns stimulus on
       
         delay(1000);                    //keeps on for a second               
 
-        digitalWrite(pinLED, LOW);      //writes led (can be analog instead of digital)      -- turns LED off      
-        analogWrite(pinSol, LOW);       //writes stimulus                                    -- turns stimulus off
+        digitalWrite(pinLED, LOW);      //turns LED off      
+        analogWrite(pinSol, LOW);       //turns stimulus off
         
         delay(1000);                    //turns off for a second         
     }
