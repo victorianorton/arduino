@@ -3,8 +3,8 @@
   experiment. 
   
   Send out 45 total pulses. 
-  First 30 pulses will simulatenously turn on LED light, and solenoid (trigger stimulus) - for one second.
-  Next 15 pulses (16-30) will simulatenously turn on camera, LED light, and solenoid - for one second. 
+  First 30 pulses will simultaneously turn on LED light, and solenoid (trigger stimulus) - for one second.
+  Then there is a 3 second pause, before the next 15 pulses which simultaneously turn on  camera, LED light, and solenoid - for one second. 
   
   Created 13 July 2014 by Victoria Norton
 */
