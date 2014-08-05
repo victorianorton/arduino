@@ -30,7 +30,7 @@ void loop()
         digitalWrite(pinLED, HIGH);     //turns LED on
         digitalWrite(pinSol, HIGH);     //turns stimulus on
       
-        delay(1000);                    //keeps on for a second               
+        delay(100);                     //keeps on for a msec               
 
         digitalWrite(pinCam, LOW);      //turns camera off                          
         digitalWrite(pinLED, LOW);      //turns LED off      
@@ -43,7 +43,7 @@ void loop()
         digitalWrite(pinLED, HIGH);     //turns LED on
         digitalWrite(pinSol, HIGH);     //turns stimulus on
       
-        delay(1000);                    //keeps on for a second               
+        delay(100);                     //keeps on for a msec               
 
         digitalWrite(pinLED, LOW);      //turns LED off      
         analogWrite(pinSol, LOW);       //turns stimulus off
