@@ -2,9 +2,9 @@
   Arduino program to control high speed camera, LED light, and solenoid (trigger stimulus) during habituation
   experiment. 
   
-  Send out 45 total pulses. 
+  Send out 45 total signals. 
   First 30 pulses will simultaneously turn on LED light, and solenoid (trigger stimulus) - for one second.
-  Then there is a 3 second pause, before the next 15 pulses which simultaneously turn on  camera, LED light, and solenoid - for one second. 
+  Then there is a 3 second pause, before the next 15 signals which simultaneously turn on  camera, LED light, and solenoid - for one second. 
   
   Created 13 July 2014 by Victoria Norton
 */
